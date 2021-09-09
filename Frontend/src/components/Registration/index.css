@@ -1,0 +1,14 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 375px;
+    height: 812px;  
+    background: #FFFFFF;
+    
+}
