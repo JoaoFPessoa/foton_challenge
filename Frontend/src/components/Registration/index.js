@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import {useHistory} from 'react-router-dom'
 import axios from 'axios';
 import './index.css'
+import NavBar from '../NavBar';
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+</style>
 
 const initialValue = {
     name: '',
@@ -33,7 +37,7 @@ const Form = () => {
 
     return (
         <div class="container">
-            <h1>Add a new book</h1>
+            <h1 class="add-title">Add a new book</h1>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                     <label htmlFor="name" >Name</label>
@@ -41,12 +45,13 @@ const Form = () => {
                     <label htmlFor="author">Author</label>
                     <input id="author" name="author" type="text" onChange={onChange}></input>
                     <label htmlFor="description">Description</label>
-                    <input id="description" name="description" type="text" onChange={onChange}></input>
+                    <textarea id="description" name="description" rows="15" cols="33" type="text" onChange={onChange}></textarea>
                     <label htmlFor="image">ImageUrl</label>
                     {/* SOMENTE URL FUNCIONANDO */}
                     <input id="imageUrl" name="image" type="text" onChange={onChange}></input>
-                    <button type="submit">Add a new book</button>
+                    <button class="submit-button" type="submit">Add a new book</button>
                 </div>
+                <NavBar />
             </form>
         </div>
     )

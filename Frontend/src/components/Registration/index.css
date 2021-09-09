@@ -1,14 +1,61 @@
+.registration-container {
+    width: 375px;
+    height: 812px;
+    margin: 0 auto;
+}
+
 .form-group {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
+    border: none;
+    margin: 10px 0 0px 10px;
+}
+input[type=text] {
+    width: 336px;
+    background: #FDFCFC;
+    box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.4926);
+    border-radius: 10px;
+    height: 48px;
+    margin: 10px 0 30px 10px;
+    border: none;
+  }
+.add-title {
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FF6978;
+    font-family: 'Oswald', sans-serif;;
+    margin: 0px 0 0px 20px;
+}
+label {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    margin: 10px 0 0px 10px;
+    font-weight: bold;
 }
 
-.container {
-    position: relative;
-    width: 375px;
-    height: 812px;  
-    background: #FFFFFF;
-    
+textarea {
+    width: 336px;
+    height: 228px;
+    margin-top: 10px;
+    margin-bottom: 39px;
+    background: #FDFCFC;
+    box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.4926);
+    border-radius: 10px;
+    margin: 10px 0 0px 10px;
+    border: none;
+}
+
+.submit-button{
+width: 336px;
+height: 48px;
+background: #FF6978;
+box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.4926);
+border-radius: 10px;
+border: none;
+color: white;
+margin: 10px 0 0px 10px;
 }

@@ -1,0 +1,39 @@
+.container {
+width: 375px;
+height: 812px;
+background: #f1ecec;
+}
+.input {
+width: 336px;
+height: 48px;
+margin: 50px 20px 30px 20px;
+background: #FDFCFC;
+box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.122623);
+border-radius: 10px;
+}
+
+.subtitle {
+    width: 210px;
+    height: 29px;
+   /*font-family: SF Pro display;*/
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 24px; */
+    line-height: 29px;
+    margin-left: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.load-button {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    font-family: FontAwesome;
+}

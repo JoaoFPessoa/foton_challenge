@@ -1,0 +1,30 @@
+.details-container {
+    width: 375px;
+    height: 100%;
+    background: #fdf9f9; 
+    margin: 0 auto;
+    }
+
+.author {
+color: #FF6978;
+margin-left: 21px;
+font-size: 16px;
+line-height: 19px;
+}
+
+.detail-card-img {
+width: 151px;
+height: 234px;
+margin: 50px 111px 36px 114px;
+}
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+
+}
+.description {
+    color: rgba(49, 49, 49, 0.6);
+    margin-left: 20px;
+}

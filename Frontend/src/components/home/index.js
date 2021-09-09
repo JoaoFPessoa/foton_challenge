@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import 'bulma/css/bulma.min.css';
 import BookCard from '../Card/index'
 import './index.css'
+import NavBar from '../NavBar';
+import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 
 const Home = () => {
     const [books, setBooks] = useState([]);
     const [search, setSearch] = useState('');
+    const [visible, setVisible] = useState(6)
+    
+    const showMoreItems = () => {
+      setVisible(prevValue => prevValue+3)
+    }
 
     useEffect(() =>{
         const params = {}
@@ -23,17 +29,21 @@ return (
     <div className="container">
     <input 
     type="search" 
-    placeholder="Search book" 
+    placeholder="&#xf002; Search Book" 
     className="input"
     value={search}
     onChange={(ev) => setSearch(ev.target.value) }
      />
-    <h1 className="subtitle">Hi, <span className="has-text-danger"> Mehmed Al Fatih </span></h1>
-    <div>
-  {books.map((book) => (
+    <h1 className="subtitle">Hi, <span className="has-text-danger"> Mehmed Al Fatih👋</span></h1>
+    <div className="grid">
+  {books.slice(0, visible).map((book) => (
     <BookCard book={book} />
   ))}
     </div>
+    <div className="load-button">
+    <button onClick={showMoreItems}>Load More</button>
+    </div>
+    <NavBar />
     </div>
 )
 }

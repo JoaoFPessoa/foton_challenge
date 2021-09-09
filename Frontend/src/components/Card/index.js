@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const BookCard = ({book}) => {
 return (
- <div className="container">
+ <div className="card-container">
     <ul> 
       
         <li key={book._id}>
