@@ -8,7 +8,7 @@ import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 const Home = () => {
     const [books, setBooks] = useState([]);
     const [search, setSearch] = useState('');
-    const [visible, setVisible] = useState(6)
+    const [visible, setVisible] = useState(3)
     
     const showMoreItems = () => {
       setVisible(prevValue => prevValue+3)
@@ -22,6 +22,7 @@ const Home = () => {
         axios.get('http://localhost:8080', { params })
         .then((response) => {
             setBooks(response.data)
+            console.log(response.data)
         });
     }, [search])
 
