@@ -1,3 +1,7 @@
+I made this project using the MERN stack, rope you guys enjoy!
+You can see more info down here:
+
+
 # Fullstack Challenge
 
 Clone this repository and start our challenge **right now**.
