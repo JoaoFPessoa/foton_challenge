@@ -1,4 +1,4 @@
-I made this project using the MERN stack, rope you guys enjoy!
+I made this project using the MERN stack, hope you guys enjoy!
 You can see more info down here:
 
 
