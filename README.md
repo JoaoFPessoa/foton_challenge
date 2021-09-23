@@ -2,6 +2,12 @@ I made this project using the MERN stack, hope you guys enjoy!
 You can see more info down here:
 
 
+
+https://user-images.githubusercontent.com/56404282/134516196-525e849c-2efc-487c-babc-8a42b0025f08.mp4
+
+
+
+
 # Fullstack Challenge
 
 Clone this repository and start our challenge **right now**.
